@@ -1,6 +1,6 @@
 (defproject om-with-tests/lein-template "0.0.1"
   :description "A lein template for creating Om projects with test setup."
-  :url "https://github.com/magomimmo/om-start-template"
+  :url "https://github.com/zoldar/om-with-tests-template"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :pom-addition [:developers [:developer
