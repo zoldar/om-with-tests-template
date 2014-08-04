@@ -46,7 +46,7 @@ Evaluate `core.cljs` file form by form starting from the namespace declaration. 
 
 ### Acknowledgements
 
-Template is based on [omchaya][4] example application, [om-start-template][5] and a couple of other tidbits of information from around the Internet. It's a very first release so I will be greateful for any feedback.
+Template is based on [omchaya][4] example application, [om-start-template][5] and a couple of other tidbits of information from around the Internet. It's a very first release so I will be grateful for any feedback.
 
 ### Problems
 
