@@ -22,6 +22,12 @@ In another terminal, run continuous testing:
 lein with-profile -dev,+tdd cljsbuild auto
 ```
 
+In order to generate release build with advanced optimizations enabled, issue this command:
+
+```bash
+lein with-profile -dev cljsbuild once
+```
+
 ### Emacs
 
 Open the generated `core.cljs` file in Emacs from the `src/cljs/om-tut` directory and run the `C-c M-j` shortcut (or `M-x cider-jack-in`).
@@ -44,13 +50,13 @@ Finally, visit the `http://localhost:3000` URL to activate the Browser Connected
 
 Evaluate `core.cljs` file form by form starting from the namespace declaration. To do that just position your cursor at the end of each form and type `C-c C-e`.
 
-### Acknowledgements
+## Acknowledgements
 
 Template is based on [omchaya][4] example application, [om-start-template][5] and a couple of other tidbits of information from around the Internet. It's a very first release so I will be grateful for any feedback.
 
-### Problems
+## Problems
 
-Currently, source maps are disabled for development build, because they slow down intial and incremental rebuilds considerably - by several seconds.
+Currently, source maps are disabled for development build, because they slow down intial and incremental rebuilds considerably - by several seconds. Unfortunately, austin does not play well with :none optimization mode which is the only one for which source map generation is reasonably fast.
 
 ## License
 
