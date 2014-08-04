@@ -19,12 +19,38 @@ lein cljsbuild auto dev
 In another terminal, run continuous testing:
 
 ```bash
-lein cljsbuild auto test
+lein with-profile -dev,+tdd cljsbuild auto
 ```
 
-Hooking up to project's REPL, in case of [LightTable][1], can be accomplished by adding external browser connection as described in [David Nolen's][2] [Tutorial on OM][3]
+### Emacs
+
+Open the generated `core.cljs` file in Emacs from the `src/cljs/om-tut` directory and run the `C-c M-j` shortcut (or `M-x cider-jack-in`).
+
+The command needs sometime to download dependencies and plugins, to compile the ClojureScript code and to run the nREPL server and client. So, be patient the very first time.
+
+Once the nREPL is ready, evaluate the following Clojure forms:
+
+```clj
+(run) ; to run the included http server
+```
+
+and then
+
+```clj
+(browser-repl) ; to run the Browser Connected REPL
+```
+
+Finally, visit the `http://localhost:3000` URL to activate the Browser Connected REPL.
+
+Evaluate `core.cljs` file form by form starting from the namespace declaration. To do that just position your cursor at the end of each form and type `C-c C-e`.
+
+### Acknowledgements
 
 Template is based on [omchaya][4] example application, [om-start-template][5] and a couple of other tidbits of information from around the Internet. It's a very first release so I will be greateful for any feedback.
+
+### Problems
+
+Currently, source maps are disabled for development build per default, because they slow down intial and incremental rebuilds considerably - by several seconds. Also, the version of Clojurescript is 2234 - it is the newest one possible which doesn't cause a weird analyzer error to be thrown during build process.
 
 ## License
 

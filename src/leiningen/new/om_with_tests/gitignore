@@ -2,7 +2,6 @@ pom.xml
 *jar
 /lib/
 /classes/
-/out/
 /target/
 .lein-deps-sum
 .lein-repl-history
@@ -10,5 +9,5 @@ pom.xml
 .nrepl-port
 {{sanitized}}.js
 {{sanitized}}.dev.js
-out/
 resources/private/
+resources/dev/

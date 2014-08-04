@@ -1,9 +1,11 @@
 (ns {{name}}.components.basic
-  (:require [om-tools.core :refer-macros [defcomponent]]
-            [schema.core :as s]
+  (:require [om.core :as om :include-macros true]
             [sablono.core :as html :refer-macros [html]]))
 
-(defcomponent hello-component [{:keys [name]} owner]
-  (render
-   [_]
-   (html [:div.message (str "Hello, " name "!")])))
+(defn hello-component 
+  [{:keys [name]} owner]
+  (reify
+    om/IRender
+    (render
+      [_]
+      (html [:div.message (str "Hello, " name "!")]))))
