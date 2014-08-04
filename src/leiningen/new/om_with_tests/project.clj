@@ -2,8 +2,8 @@
   :description "{{name}} Om app"
   :url "http://example.com"
 
-  :dependencies [[org.clojure/clojure "1.5.1"]
-                 [org.clojure/clojurescript "0.0-2234"]
+  :dependencies [[org.clojure/clojure "1.6.0"]
+                 [org.clojure/clojurescript "0.0-2280"]
                  [prismatic/dommy "0.1.2"]
                  [om "0.7.0"]
                  [sablono "0.2.20"]]

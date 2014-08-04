@@ -50,7 +50,7 @@ Template is based on [omchaya][4] example application, [om-start-template][5] an
 
 ### Problems
 
-Currently, source maps are disabled for development build per default, because they slow down intial and incremental rebuilds considerably - by several seconds. Also, the version of Clojurescript is 2234 - it is the newest one possible which doesn't cause a weird analyzer error to be thrown during build process.
+Currently, source maps are disabled for development build, because they slow down intial and incremental rebuilds considerably - by several seconds.
 
 ## License
 
