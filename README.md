@@ -2,6 +2,10 @@
 
 A Leiningen template for creating Om applications with a continuous testing setup.
 
+## Requirements
+
+[PhantomJS][1] is required in order to run tests.
+
 ## Usage
 
 Start by creating a new Om project based on `om-with-tests` lein-template.
@@ -54,10 +58,6 @@ Evaluate `core.cljs` file form by form starting from the namespace declaration. 
 
 Template is based on [omchaya][4] example application, [om-start-template][5] and a couple of other tidbits of information from around the Internet. It's a very first release so I will be grateful for any feedback.
 
-## Problems
-
-Currently, source maps are disabled for development build, because they slow down intial and incremental rebuilds considerably - by several seconds. Unfortunately, austin does not play well with :none optimization mode which is the only one for which source map generation is reasonably fast.
-
 ## License
 
 Copyright © 2014 Adrian Gruntkowski
@@ -65,8 +65,6 @@ Copyright © 2014 Adrian Gruntkowski
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
 
-[1]: http://www.lighttable.com/
-[2]: https://github.com/swannodette
-[3]: https://github.com/swannodette/om/wiki/Basic-Tutorial
-[4]: https://github.com/sgrove/omchaya
-[5]: https://github.com/magomimmo/om-start-template
+[1]: http://phantomjs.org
+[2]: https://github.com/sgrove/omchaya
+[3]: https://github.com/magomimmo/om-start-template

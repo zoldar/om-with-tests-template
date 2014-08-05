@@ -26,8 +26,8 @@
                    :compiler
                    {:output-to "resources/dev/public/js/{{sanitized}}.dev.js"
                     :output-dir "resources/dev/public/js/"
-                    :optimizations :whitespace
-                    ;; :source-map "resources/dev/public/js/{{sanitized}}.dev.js.map"
+                    :optimizations :none
+                    :source-map "resources/dev/public/js/{{sanitized}}.dev.js.map"
                     :pretty-print true}}}}
         :injections [(require '[ring.server :as http :refer [run]]
                               'cemerick.austin.repls)
