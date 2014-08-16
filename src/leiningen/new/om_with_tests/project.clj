@@ -3,10 +3,10 @@
   :url "http://example.com"
 
   :dependencies [[org.clojure/clojure "1.6.0"]
-                 [org.clojure/clojurescript "0.0-2280"]
-                 [prismatic/dommy "0.1.2"]
+                 [org.clojure/clojurescript "0.0-2311"]
+                 [prismatic/dommy "0.1.3"]
                  [om "0.7.0"]
-                 [sablono "0.2.20"]]
+                 [sablono "0.2.21"]]
   
   :min-lein-version "2.3.4"
 

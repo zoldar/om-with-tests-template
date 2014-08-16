@@ -17,7 +17,7 @@ lein new om-with-tests om-tut
 Then, in project's root directory, start coninuous build of development version of the application:
 
 ```bash
-lein cljsbuild auto dev
+lein cljsbuild auto
 ```
 
 In another terminal, run continuous testing:
