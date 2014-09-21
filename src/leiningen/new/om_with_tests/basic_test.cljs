@@ -1,9 +1,9 @@
-(ns {{name}}.test.components.basic
+(ns {{name}}.components.basic-test
   (:require-macros [cemerick.cljs.test :refer (is deftest with-test run-tests testing)])
   (:require [cemerick.cljs.test :as t]
             [dommy.core :as dommy]
             [om.core :as om :include-macros true]
-            [{{name}}.test.components.common :as com]
+            [{{name}}.components.common-test :as com]
             [{{name}}.components.basic :as basic])
   (:use-macros [dommy.macros :only [node sel sel1]]))
 

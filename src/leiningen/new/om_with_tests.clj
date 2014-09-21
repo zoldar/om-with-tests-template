@@ -28,5 +28,5 @@
              ["resources/test/js/vendor/es5-sham.js" (render "es5-sham.js" data)]
              ["resources/test/js/vendor/es5-shim.js" (render "es5-shim.js" data)]
              ["test/cljs/{{sanitized}}/test.cljs" (render "test.cljs" data)]
-             ["test/cljs/{{sanitized}}/components/common.cljs" (render "common.cljs" data)]
-             ["test/cljs/{{sanitized}}/components/basic.cljs" (render "basic_test.cljs" data)])))
+             ["test/cljs/{{sanitized}}/components/common_test.cljs" (render "common_test.cljs" data)]
+             ["test/cljs/{{sanitized}}/components/basic_test.cljs" (render "basic_test.cljs" data)])))

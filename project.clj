@@ -1,4 +1,4 @@
-(defproject om-with-tests/lein-template "0.0.6"
+(defproject om-with-tests/lein-template "0.0.7-SNAPSHOT"
   :description "A lein template for creating Om projects with test setup."
   :url "https://github.com/zoldar/om-with-tests-template"
   :license {:name "Eclipse Public License"
